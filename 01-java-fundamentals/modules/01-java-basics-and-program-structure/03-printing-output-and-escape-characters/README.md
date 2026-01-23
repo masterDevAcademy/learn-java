@@ -1,4 +1,4 @@
-<h1 align="center">Lesson 3: Printing Output & Escape Characters</h3>
+<h1 align="center">Lesson 3: Printing Output & Escape Characters</h1>
 
 ## Lesson Goal
 Learn how to display text output in the console and control **how that output is formatted**:
@@ -93,17 +93,6 @@ System.out.print.ln("Quote: \"Stay consistent.\"");
 Quote: "Stay consistent."
 ```
 
-<h2 align=center>
-Quick Recap
-</h2>
-
-- `println()` prints a line then moves down
-- `print()` stays on the same line
-- `\n` = new line
-- `\t` = tab spacing
-- `\"` = literal quotation mark
-
-Next lesson, you'll be ready to start building real programs that use these output skills.
 
 <h2 align=center>
 Mini Project — Console Player Card
@@ -170,3 +159,15 @@ Quote: ["Ship it."]
 - Misalignment due to inconsistent tabs/spaces
 - Overthinking it — this lesson is about output control, not logic
 
+
+<h2 align=center>
+Quick Recap
+</h2>
+
+- `println()` prints a line then moves down
+- `print()` stays on the same line
+- `\n` = new line
+- `\t` = tab spacing
+- `\"` = literal quotation mark
+
+Next lesson, you'll be ready to start building real programs that use these output skills.

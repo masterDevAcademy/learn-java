@@ -1,16 +1,6 @@
 public class PlayerCardPrinter {
     public static void main(String[] args) {
 
-        /*
-        ==============================================
-        MINI PROJECT TODO
-        ==============================================
-        Build your own player card 
-
-        Requirements:
-        - Must use print() at least once
-        */
-
         System.out.print("#################################\n");
         System.out.println("#         Baldur's Gate         #"); 
         System.out.println("#################################");
@@ -28,3 +18,12 @@ public class PlayerCardPrinter {
         System.out.println("#################################");       
     }
 }
+
+/*
+    MINI PROJECT TODO
+    ----------------------------------
+    Build your own player card 
+
+    Requirements:
+    - Must use print() at least once
+*/
