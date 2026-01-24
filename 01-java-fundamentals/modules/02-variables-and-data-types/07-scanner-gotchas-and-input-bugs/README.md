@@ -92,6 +92,8 @@ String city = scanner.nextLine();
 
 This pattern prevents skipped input bugs.
 
+---
+
 <h2 align=center>
 Mini Project — Fix the Broken Input
 </h2>
@@ -136,6 +138,8 @@ public class BrokenProfile {
 
         System.out.println("Age: " + age);
         System.out.println("City: " + city);
+
+        scanner.close();
     }
 }
 
@@ -154,6 +158,8 @@ City: Paris
 - Adding unnecessary logic instead of fixing input flow
 - Removing `nextLine()` entirely
 - Forgetting that numeric input leaves a newline behind
+
+---
 
 <h2 align=center> Quick Recap </h2>
 
