@@ -29,6 +29,8 @@ For now, the most important thing to remember is:
 
 - {{Tip or note about usage}}
 
+---
+
 <h2 align=center> 2) String vs. Primitive Types </h2>
 
 Primitive types:
@@ -50,6 +52,8 @@ int length = username.length();
 ```
 
 You'll learn more about objects later. For now, focus on **what strings can do**. 
+
+---
 
 <h2 align=center>
 3) String Concatenation
@@ -79,6 +83,8 @@ User: Astarion Ancunin
 
 Java automatically converts non-String values into text when concatenating.
 
+--- 
+
 <h2 align=center>
 4) The <code>length()</code> Method
 </h2>
@@ -99,6 +105,8 @@ Example:
 ```java
 "Hi there".length(); //8
 ```
+
+---
 
 <h2 align=center>
 The <code>substring()</code> Method
@@ -126,6 +134,8 @@ Indexes start at 0.
 S h a d o w H e a r t
 0 1 2 3 4 5 6 7 8 9 10
 ```
+
+---
 
 <h2 align=center> Mini Project — Alias Generator </h2>
 
@@ -190,6 +200,8 @@ Final Alias: Dark_ShadowHeart
 - Treating `String` like a primitive type
 - Hardcoding output instead of using variables
 - Forgetting semicolons
+
+---
 
 <h2 align=center> Quick Recap </h2>
 
