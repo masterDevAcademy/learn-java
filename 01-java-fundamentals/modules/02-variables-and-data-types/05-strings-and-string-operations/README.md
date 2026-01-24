@@ -17,8 +17,8 @@ A `String` represents **text** in Java.
 
 Examples:
 ```java
-String name = "Nova";
-String city = "Nightfall";
+String name = "Astarion";
+String city = "Baldur's Gate";
 ```
 
 Unlike primitive data types (`int`, `double`, etc.), a `String` is not a primitive. It is an **object**.
@@ -45,7 +45,7 @@ Strings:
 - Have **methods** you can call
 
 ```java
-String username = "ShadowFox";
+String username = "ShadowHeart";
 int length = username.length();
 ```
 
@@ -60,8 +60,8 @@ You'll learn more about objects later. For now, focus on **what strings can do**
 In Java, this is doing using the `+` operator.
 
 ```java
-String first = "Jon";
-String last = "Snow";
+String first = "Astarion";
+String last = "Ancunin";
 
 String fullName = first + last;
 ```
@@ -74,7 +74,7 @@ System.out.println("User: " + fullName);
 **Output:**
 
 ```text
-User: Jon Snow
+User: Astarion Ancunin
 ```
 
 Java automatically converts non-String values into text when concatenating.
@@ -107,13 +107,13 @@ The <code>substring()</code> Method
 The `substring()` method extracts part of a String.
 
 ```java
-String name = "NeonRaven";
-String shortName = name.substring(0, 4);
+String name = "ShadowHeart";
+String shortName = name.substring(0, 6);
 ```
 
 This produces
 ```text
-Neon
+Shadow
 ```
 
 ### How it works
@@ -123,8 +123,8 @@ Neon
 Indexes start at 0.
 
 ```text
-N e o n R a v e n
-0 1 2 3 4 5 6 7 8
+S h a d o w H e a r t
+0 1 2 3 4 5 6 7 8 9 10
 ```
 
 <h2 align=center> Mini Project — Alias Generator </h2>
@@ -176,10 +176,10 @@ public class AliasGenerator {
 ```text
 ALIAS GENERATED
 ===============
-Base Name: NeonRaven
-Name Length: 9
-Short Tag: Neon
-Final Alias: Silent_NeonRaven
+Base Name: ShadowHeart
+Name Length: 11
+Short Tag: Shadow
+Final Alias: Dark_ShadowHeart
 ```
 
 ### Common Mistakes
