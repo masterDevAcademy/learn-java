@@ -3,7 +3,7 @@
 
 /*
     You are designing a player card to display player info.
-    (See Project Tasks below for requirements)
+    (See Project Tasks for requirements)
 */
 
 public class PlayerCardPrinter {
