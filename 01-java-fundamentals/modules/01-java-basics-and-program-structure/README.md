@@ -7,6 +7,8 @@ This module focuses on helping beginners understand the *shape* and *execution m
 
 This module deliberately avoids programming logic and problem-solving. Instead, it builds a solid mental foundation for how Java works at a high-level and how programmers interact with it.
 
+---
+
 <h2 align=center>Learning Goals</h2>
 By the end of this module, learners should understand:
 
@@ -21,6 +23,8 @@ By the end of this module, learners should understand:
 - How to display **text output** in the console
 - How special characters affect printed output
 
+---
+
 <h2 align=center>Skills You Will Gain</h2>
 After completing this module, learners will be able to:
 
@@ -29,6 +33,8 @@ After completing this module, learners will be able to:
 - Create and modify Java programs that print output to the console
 - Format console output using spacing and escape characters
 - Build small, self-contained console programs
+
+---
 
 <h2 align=center>Module Lessons</h2>
 
@@ -111,3 +117,13 @@ Learn how to display text output clearly and control formatting in the console.
 
 #### Mini Project
 Create a program to print a simple receipt layout with aligned text and spacing using only print statements and escape characters
+
+---
+
+<h2 align=center>
+Module Summary
+</h2>
+
+This module established the foundation for all future Java programming.
+
+Instead of focusing on logic or problem-solving, you leaned **how Java programs are structure**, **how they run**, and **how programmers interact with them**. You explored what happens between writing code and seeing output, and you built confident navigating Java source files and program execution.

@@ -96,6 +96,7 @@ public class JavaInfo {
 - Anything inside `main()` runs **top to bottom**
 
 ---
+
 <h2 align=center>
 Mini Project — Your First Java Program
 </h2>

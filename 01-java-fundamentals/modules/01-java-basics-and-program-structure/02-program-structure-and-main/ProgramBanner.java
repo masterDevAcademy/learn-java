@@ -1,5 +1,10 @@
 // Lesson 2: Java Program Structure & main() 
 // MINI PROJECT - ASCII BANNER
+
+/*
+    You are designing a program banner. 
+    This can say anything you want but should use ASCII characters.
+*/
 public class ProgramBanner {
 
     // This is the main method.
@@ -19,7 +24,7 @@ public class ProgramBanner {
 }
 
 /*
-    MINI PROJECT TODO:
+    MINI PROJECT TASKS:
     ------------------
     1. Change the text inside the banner
     2. Adjust spacing to keep the box aligned

@@ -32,6 +32,8 @@ For now, don't worry about *why* — just remember this rule:
 
 > **Every Java program must have at least one class**
 
+---
+
 <h2 align=center> 
 2) Class Declaration Syntax
 </h2>
@@ -54,6 +56,7 @@ Let's break it down:
 - `{ }`
     - Curly braces define the **body** of the class
 
+---
 
 <h2 align=center>
 3) The Structure of a Java Program
@@ -74,6 +77,7 @@ There are **three main layers**:
 2. The `main` **method**
 3. The **code inside** `main`
 
+---
 
 <h2 align=center>
 4) The <code>main</code> Method (Very Important)
@@ -95,6 +99,7 @@ When you run a Java program, Java:
 
 You don't need to understand every word yet — just recognize it.
 
+---
 
 <h2 align=center>
 5) Curly Braces <code>{ }</code> and Code Blocks
@@ -116,6 +121,8 @@ public class Example {
 - **Curly braces must always:**
     - Come in pairs
     - Open `{` and close `}` in the correct order
+
+---
 
 <h2 align=center>
 5) Indentation & Readability
@@ -146,6 +153,8 @@ Good indentation:
 - Prevents mistakes
 - Makes your code easier to understand
 
+---
+
 <h2 align=center>
 6) Example: A Complete Java Program
 </h2>
@@ -162,6 +171,7 @@ public class HelloStructure {
 ```text
 Java programs have structure!
 ```
+
 ---
 
 <h2 align=center>
@@ -225,6 +235,8 @@ Your program must:
 - Code written outside the `main()` method
 - Inconsistent indentation
 - Trying to add logic instead of focusing on structure
+
+---
 
 <h2 align=center>
 Quick Recap

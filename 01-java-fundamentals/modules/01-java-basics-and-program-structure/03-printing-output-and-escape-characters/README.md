@@ -44,6 +44,8 @@ Hello World
 - Use `println()` for most line-by-line output.
 - Use `print()` when you want multiple pieces on the same line.
 
+--- 
+
 <h2 align=center>
 New Lines with <code>\n</code>
 </h2>
@@ -60,6 +62,8 @@ Line 2
 Line 3
 ```
 Useful when you want to build multi-line output inside one string.
+
+---
 
 <h2 align=center>
 Tabs with \t
@@ -79,6 +83,8 @@ Class:  Ranger
 
 Tabs are great for quick alignment, but spacing may very slightly depending on the console.
 
+---
+
 <h2 align=center>
 4) Printing Quotes with <code>\"</code>
 </h2>
@@ -93,6 +99,7 @@ System.out.print.ln("Quote: \"Stay consistent.\"");
 Quote: "Stay consistent."
 ```
 
+---
 
 <h2 align=center>
 Mini Project — Console Player Card
@@ -159,6 +166,7 @@ Quote: ["Ship it."]
 - Misalignment due to inconsistent tabs/spaces
 - Overthinking it — this lesson is about output control, not logic
 
+---
 
 <h2 align=center>
 Quick Recap
