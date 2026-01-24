@@ -30,6 +30,8 @@ Here:
 - `level` is the **variable name**
 - `10` is the **value**
 
+---
+
 <h2 align=center> 2) Declaring vs Initializing Variables </h2>
 
 These are two related but distinct steps 
@@ -77,7 +79,7 @@ boolean isAlive;
 Invalid examples:
 ```java
 int 2level;     // starts with a number
-double player-health;   // contains hyper
+double player-health;   // contains hyphen
 boolean public;     // keyword
 ```
 
@@ -90,6 +92,8 @@ double critChance;
 boolean hasShield;
 ```
 
+---
+
 <h2 align=center>4) Primitive Data Types</h2>
 
 Primitive data types store **simple values** directly.
@@ -97,7 +101,7 @@ Primitive data types store **simple values** directly.
 In this lesson, we focus on the most common ones:
 
 ### `int` — Whole Numbers
-Used for counting a discrete values.
+Used for counting discrete values.
 
 ```java
 int level = 12;
@@ -109,7 +113,7 @@ Used for measurements and precision.
 
 ```java
 double accuracy = 98.6;
-double critChange = 0.25;
+double critChance = 0.25;
 ```
 
 ### `boolean` — True / False
@@ -130,6 +134,38 @@ char grade = 'S';
 
 > `char` is not the same as a `String`
 
+<div align=center>
+
+<h3>Data Types Chart</h3>
+
+| Type | Purpose | Default Value | Default Value | Size |
+|------|---------|---------------|----------|------|
+| **int** | Whole numbers (e.g., `10`, `-500`)| `0` | 32-bit | 
+| **double** | Decimal numbers (e.g., `3.14`, `19.99`) | `0.0` | 64-bit |
+| **boolean** | Logical values: `true` or `false` | `false` | 1-bit* |
+| **char** | A single Unicode character (e.g., `A`) | `\u0000` | 16-bit |
+| **String** (*A reference data type, but you will need to know it for the mini project.) | A sequence of characters (e.g., `"Hello"`) | `null` | Varies |
+| **long** (*not covered in this module but should know*) | Very large whole numbers | `0L` | 64-bit |
+
+</div>
+
+### A Note About <code>String</code>
+
+You may notice that Java programs often use `String` to store text:
+
+```java
+String name = "Halsin";
+```
+
+Even though `String` looks like a primitive type, it **is not**. 
+- `String` is a **reference type**, not a primitive
+- It represents a sequence of characters
+- It has built-in methods for working with text
+
+For now, it's enough to know that:
+> **`String` is used to store text, but it behaves differently from primitive data types** 
+- In the next lesson, we'll explore `String` in depth and learn how to combine, analyze and manipulate text.
+
 <h2 align=center>5) Using Variables in Output</h2>
 
 Variables can be printed by combining them with text using `+`:
@@ -141,13 +177,15 @@ System.out.println("Alive: " + isAlive);
 
 Java automatically converts values to text when printing.
 
-<h2 align=center> Mini Project — Player Stats Engine (Player Card v2) </h2>
+<h2 align=center> Mini Project — Player Stats Engine </h2>
 
-Upgrade your previously printed player card into a **dynamic player states report** using variables.
+Last module, we printed a player card using Java. You're going to do something similar in this project. You can either use the same character, or a new one!
 
 In this version, your program should **store player information in variables** and print the result using those values. Nothing in the output should be hardcoded except labels and formatting.
 
 This project focuses on **storing data**, not calculating or modifying it.
+
+> You will use `String` variables in this project only to store and display text. You do not need to understand String operations yet — those are covered in the next lesson.
 
 ### Objective
 
@@ -187,7 +225,7 @@ public class PlayerStats {
     public static void main(String[] args) {
 
         // Declare and initialize your variables here
-
+        
         // Print the player stats report here
 
     }
@@ -202,7 +240,7 @@ PLAYER STATUS REPORT
 Name: Halsin
 Level: 12
 Health: 87
-Crit Change: 23.5
+Crit Chance: 23.5
 Rank: A
 Alive: true
 ==================== 
@@ -219,7 +257,7 @@ Alive: true
 
 - Variables store data in memory
 - Data types define what kind of data can be stored
-- Variables must be decalred and initialized before use
+- Variables must be declared and initialized before use
 - `int`, `double`, `boolean` and `char` are primitive data types
 - Variables allow programs to become dynamic.
 
