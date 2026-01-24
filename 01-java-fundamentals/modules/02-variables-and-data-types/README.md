@@ -70,8 +70,6 @@ Understand how Java stores information using variables and primitive data types.
 #### Mini Project
 Upgrade a previously printed player card into a **dynamic stats report** using variables.
 
----
-
 <h3 align=center>
     <a href="./05-strings-and-string-operations/">
         5. Strings & String Operations
@@ -89,8 +87,6 @@ Learn how Java handles text and how to manipulate it using built-in String metho
 
 #### Mini Project
 Create a **custom alias / username generator** using String operations.
-
----
 
 <h3 align=center>
     <a href="./06-input-with-scanner/">
@@ -111,8 +107,6 @@ Create a **custom alias / username generator** using String operations.
 
 #### Mini Project
 Build an **interactive character profile creator** that collects and displays user input.
-
----
 
 <h3 align=center>
     <a href="./07-scanner-gotchas-and-input-bugs/">
