@@ -1,3 +1,15 @@
+// Lesson 6 Input with Scanner
+// Mini Project - Interactive Character Profile
+
+/*
+    Create a Java program that prompts the user for multiple pieces of information,
+    reads both text and numeric input using Scanner, stores user input in variables, 
+    and prints a formatted summary using the cllected data.
+
+    Do NOT use conditional logic, loops, input validation, error handling, or fix input
+    bugs yet.
+*/
+
 import java.util.Scanner;
 
 public class CharacterProfile {
@@ -42,3 +54,20 @@ public class CharacterProfile {
     }
 
 }
+
+/*
+    MINI PROJECT TASKS
+    ----------------------------------
+    Build your own Character Profile with user inputs.
+
+
+    Requirements:
+    - import java.util.scanner
+    - Create exactly one Scanner object
+    - Use at least:
+        - One nextLine()
+        - One nextInt() or nextDouble()
+    - Store input in appropriately typed variables
+    - Print a clean, labeled profile summary
+    - Compile and run successfully
+*/
