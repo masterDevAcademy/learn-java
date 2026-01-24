@@ -162,6 +162,7 @@ public class CharacterProfile {
 === CHARACTER PROFILE ===
 Name: Astarion Ancunin
 Age: 263 
+*Challenge yourself and add a double here*
 City: Baldur's Gate
 Weapon: Daggers
 =========================
