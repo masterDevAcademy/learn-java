@@ -36,5 +36,9 @@ public class CharacterProfile {
         System.out.println("Weapon: " + weapon);
         System.out.println("                             ");
         System.out.println("#############################");
+
+    scanner.close();
+
     }
+
 }

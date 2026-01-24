@@ -107,6 +107,20 @@ System.out.println("Age: " + age);
 
 ---
 
+<h2 align=center>Closing the Scanner</h2>
+
+When you are finished reading input, you should close the `Scanner`.
+
+```java
+scanner.close();
+```
+
+This releases the system resource used for input
+
+> Always close the Scanner **after** you are done using it. Do not try to read input after closing it.
+
+--- 
+
 <h2 align=center>
 Mini Project — Interactive Character Profile
 </h2>
