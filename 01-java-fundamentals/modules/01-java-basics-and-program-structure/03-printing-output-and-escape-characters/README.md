@@ -143,14 +143,16 @@ Your player card must include:
 ### Basic Example (yours should be different)
 
 ```text
-===================
-    Player Card
-===================
-Name: []
-Class: []
-Level: []
-Quote: ["Ship it."]
-===================
+=========================
+       Player Card
+=========================
+Name: Halsin
+Class: Druid
+Level: 12
+Quote: "Nature's gifts 
+are bountiful, but her 
+wrath is just as fierce."
+=========================
 ```
 
 ### Common Mistakes
