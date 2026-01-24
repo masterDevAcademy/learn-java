@@ -1,6 +1,14 @@
 // Lesson 8 - Arithmetic Operators
 // Mini Project - Loot Splitter
 
+/*
+    You are creating a program that stores a total amount of loot and 
+    a party size, calculates how much each player gets, calculates how 
+    much loot is left over (remainder), and prints a clean summary. 
+
+    Do NOT use loops or conditionals.
+    You can use user input (not required but suggested)
+*/
 
 import java.util.Scanner;
 
@@ -33,5 +41,18 @@ public class SplitLoot {
         System.out.println("                     ");
         System.out.println("######################");
 
+        scanner.close();
     }    
 }
+
+/*
+    MINI PROJECT TASKS
+    ==================
+
+    Your program must
+        - Use int for total loot and party size
+        - Use / to complete each share
+        - Use % to compute leftover loot
+        - Print results using variables (no hardcoded values)
+        - Compile and run successfully
+*/
