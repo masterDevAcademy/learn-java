@@ -1,3 +1,11 @@
+// Lesson 2: Java Program Structure & main() 
+// MINI PROJECT - PlayerCardPrinter
+
+/*
+    You are designing a player card to display player info.
+    (See Project Tasks for requirements)
+*/
+
 public class PlayerCardPrinter {
     public static void main(String[] args) {
 
@@ -9,7 +17,6 @@ public class PlayerCardPrinter {
         System.out.println("#\tRace:\tWood Elf\t#");
         System.out.println("#\tClass:\tDruid\t\t#");
         System.out.println("#\tLevel:\t12\t\t#");
-        System.out.println("#\tAge:\t~350 years\t#");
         System.out.println("#                               #");
         System.out.println("############# Quote #############");
         System.out.println("#                               #");
@@ -20,10 +27,21 @@ public class PlayerCardPrinter {
 }
 
 /*
-    MINI PROJECT TODO
+    MINI PROJECT TASKS
     ----------------------------------
     Build your own player card 
 
     Requirements:
-    - Must use print() at least once
+    - A title header (like PLAYER CARD or a game name)
+    - Name
+    - Class / Role 
+    - Level
+    - One quote in quotation marks
+    - A clean border using characters like =, -, #, or *
+    - Must use the following at least once:
+        - print()
+        - println()
+        - \n
+        - \t
+        - \"
 */
