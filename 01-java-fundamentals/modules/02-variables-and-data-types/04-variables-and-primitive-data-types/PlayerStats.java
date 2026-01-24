@@ -17,7 +17,7 @@ public class PlayerStats {
         String name = "Halsin";
         int level = 12;
         int health = 87;
-        double critChange = 23.5;
+        double critChance = 23.5;
         char rank = 'A';
         boolean alive = true;
 
@@ -29,7 +29,7 @@ public class PlayerStats {
         System.out.println("# Name: " + name + "      #");
         System.out.println("# Level: " + level + "         #");
         System.out.println("# Health: " + health + "        #");
-        System.out.println("# Crit Change: " + critChange + " #");
+        System.out.println("# Crit Chance: " + critChance + " #");
         System.out.println("# Rank: " + rank + "           #");
         System.out.println("# Alive: " + alive + "       #");
         System.out.println("#####################");
