@@ -167,7 +167,7 @@ Your program must:
 - Print all results using variables (no hardcoded output values)
 - Compile and run without errors
 
-> *Hint: Try building your final aliad by adding a short prefix (like a title,mood, or role) in front of your base name using concatenation
+> *Hint: Try building your final alias by adding a short prefix (like a title,mood, or role) in front of your base name using concatenation
 
 ### Starter Template
 ```java

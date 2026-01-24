@@ -53,6 +53,6 @@ public class AliasGenerator {
     - Create a combined alias using concatenation
     - Display the length of at least on string
     - Extract one part of a String using substring()
-    - Print all results using variables (no hardcaded output values)
+    - Print all results using variables (no hardcoded output values)
     - Compile and run without errors
 */
