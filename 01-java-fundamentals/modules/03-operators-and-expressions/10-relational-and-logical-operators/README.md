@@ -1,4 +1,4 @@
-<h1 align="center">Lesson 20: Relational & Logical Operators</h1>
+<h1 align="center">Lesson 10: Relational & Logical Operators</h1>
 
 ## Lesson Goal
 Learn how Java **compares values** and evaluates **true/false conditions** using relational and logical operators.
