@@ -1,3 +1,19 @@
+// Lesson 9 - Assigment and Compound Operators
+// Mini Project - Lives Tracker
+
+/* 
+    Create a program that tracks a player's remaining lives as events
+    occur in the game. 
+    
+    The program should start a player with a fixed number of lives, update
+    the lives count as the player takes damage or gains bonuses, and print 
+    the number of lives after each event.
+
+    Do NOT use loops, conditionals, or randomization. User input is optional, 
+    not required. 
+    You MUST use assignment, compound operators, and increment/decrement only. 
+*/
+
 public class LivesTracker {
     public static void main(String[] args) {
         
@@ -45,3 +61,17 @@ public class LivesTracker {
         System.out.println("Rounds Played: " + (round - 1));
     }
 }
+
+/*
+    MINI PROJECT TASKS
+    ==================
+    Your program must: 
+        - Declare an initial int variable for lives
+        - Update the lives count at least 4 times
+        - Use at least: 
+            - One compound operator (+= or -=)
+            - One increment or decrement (++ or --)
+        - Print the lives count after each update
+        - Compile and run successfully
+
+*/

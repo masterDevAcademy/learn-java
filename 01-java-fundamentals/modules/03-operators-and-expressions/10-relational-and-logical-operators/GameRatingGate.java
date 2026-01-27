@@ -1,3 +1,19 @@
+// Lesson 10: Relational and Logical Operators
+// Mini Project - Game Rating Gate
+
+/*
+    Create a program that checks whether a player is allowed to access a game 
+    based on age and additional rules. 
+
+    Your program should store player information in variables, evaluate acces 
+    rules using relational and logical operators, and print the results of 
+    each rule check
+
+    Do NOT use if statements, loops, or branching logic. User input is optional, 
+    not required.
+    You MUST use boolean expressions and output early.
+*/
+
 import java.util.Scanner;
 
 public class GameRatingGate {
@@ -56,3 +72,18 @@ public class GameRatingGate {
         System.out.println("#####################");
     }
 }
+
+/*
+    MINI PROJECT TASKS
+    ==================
+    Your program must:
+        - Store at least
+            - Player age
+            - Game rating age requirement
+            - At least one additional boolean condition (e.g. parental permission)
+        - Use relational operators to compare numeric values
+        - Use logical operators to combine conditions
+        - Store results in boolean variables
+        - Print whether accesses is allowed 
+        - Compile and run successfully
+*/
