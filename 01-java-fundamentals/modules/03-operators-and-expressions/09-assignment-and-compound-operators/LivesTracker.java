@@ -1,4 +1,4 @@
-// Lesson 9 - Assigment and Compound Operators
+// Lesson 9 - Assignment and Compound Operators
 // Mini Project - Lives Tracker
 
 /* 

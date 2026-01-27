@@ -5,7 +5,7 @@
     Create a program that checks whether a player is allowed to access a game 
     based on age and additional rules. 
 
-    Your program should store player information in variables, evaluate acces 
+    Your program should store player information in variables, evaluate access 
     rules using relational and logical operators, and print the results of 
     each rule check
 
