@@ -84,7 +84,7 @@ Learn how to update variables over time using assignment, compound operators, an
 Create a **score tracker** that updates a player's score over multiple rounds.
 
 <h3 align="center">
-    <a href="./">
+    <a href="./10-relational-and-logical-operators">
         10. Relational &amp; Logical Operators
     </a>
 </h3>
