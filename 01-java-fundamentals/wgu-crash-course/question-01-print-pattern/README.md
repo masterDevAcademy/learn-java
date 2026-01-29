@@ -3,7 +3,7 @@ PA Question 01 — Print a 5x5 "H" pattern
 </h1>
 
 <p align=center>
-Navigate to <a href="01-java-fundamentals/modules/01-java-basics-and-program-structure/03-printing-output-and-escape-characters">Module 1 — Lesson 3</a> to learn more about output in Java.
+Navigate to <a href="../../modules/01-java-basics-and-program-structure/03-printing-output-and-escape-characters/">Module 1 — Lesson 3</a> to learn more about output in Java.
 </p>
 
 <h2 align=center>
@@ -24,6 +24,7 @@ Prompt
 
 <p align=center>
 Output the following pattern, ending with a newline.Each line of the pattern contains 5 characters including whitespace.
+</p>
 
 The output is:
 
@@ -104,6 +105,10 @@ U   U
 UUUUU
 ```
 
+### What to focus on
+- Using `System.out.println() correctly
+- Counting spaces carefully
+- Making sure the bottom of the U is centered
 
 - Open <a href="./PracticeProgramOne.java">PracticeProgramOne.java</a> or copy this template into a new file:
 
@@ -144,9 +149,14 @@ A   A
 A   A
 ```
 
+### What to focus on
+- Leading spaces matter just as much as letter
+- The middle line should be completely filled
+- Make sure both sides of the A are lined up vertically
+
 - Open <a href="./PracticeProgramTwo.java">PracticeProgramTwo.java</a> or copy this template into a new file:
 
-    PracticeProgramOne.java:
+    PracticeProgramTwo.java:
 
     ```java
     public class PracticeProgramTwo {

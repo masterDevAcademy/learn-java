@@ -53,6 +53,7 @@ public class SplitLoot {
         - Use int for total loot and party size
         - Use / to complete each share
         - Use % to compute leftover loot
+        - Do NOT print numbers directly like `34` — calculate them using variables.
         - Print results using variables (no hardcoded values)
         - Compile and run successfully
 */
