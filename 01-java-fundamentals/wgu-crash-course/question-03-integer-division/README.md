@@ -154,7 +154,7 @@ Buses Filled: 5
 ```
 
 ### What to focus on 
-- ame math patterns as the table problem
+- Same math patterns as the table problem
 - Only the variable names and divisor changed
 - Don't round — use integer division
 
