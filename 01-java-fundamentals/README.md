@@ -289,7 +289,7 @@ You are encourages to:
 - Early return
 - Error messaging
 
-**Mini Project:** Password validator
+**Mini Project:** Character creation validator
 
 ### By the end of Module 4, you can answer:
 - How does a program choose between outcomes
