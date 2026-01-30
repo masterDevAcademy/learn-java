@@ -129,6 +129,9 @@ Alex Johnson is majoring in Computer Science with a GPA of 3.8.
 - Combining multiple variables into one sentence
 - Correct spacing and punctuation
 
+
+### Try it!
+
 - Open <a href="./PracticeProgramOne.java">PracticeProgramOne.java</a> or copy this template into a new file:
 
     PracticeProgramOne.java:
@@ -174,6 +177,9 @@ Jordan Lee works as a Graphic Designer earning $28 per hour.
 - Mixing strings and numbers in output
 - Making sure spacing and punctuation are correct
 - Keeping all input/output clean and readable
+
+
+### Try it!
 
 - Open <a href="./PracticeProgramTwo.java">PracticeProgramTwo.java</a> or copy this template into a new file:
 

@@ -158,6 +158,8 @@ Buses Filled: 5
 - Only the variable names and divisor changed
 - Don't round — use integer division
 
+### Try it!
+
 - Open <a href="./PracticeProgramOne.java">PracticeProgramOne.java</a> or copy this template into a new file:
 
     PracticeProgramOne.java:
@@ -213,6 +215,9 @@ Leftover slices: 2
 - This uses **modulus (`%`)**, not division
 - Still part of the same "division concept family"
 - Helps students understand what integer division *removes*
+
+
+### Try it!
 
 - Open <a href="./PracticeProgramTwo.java">PracticeProgramTwo.java</a> or copy this template into a new file:
 

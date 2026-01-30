@@ -110,6 +110,8 @@ UUUUU
 - Counting spaces carefully
 - Making sure the bottom of the U is centered
 
+### Try it!
+
 - Open <a href="./PracticeProgramOne.java">PracticeProgramOne.java</a> or copy this template into a new file:
 
     PracticeProgramOne.java:
@@ -153,6 +155,8 @@ A   A
 - Leading spaces matter just as much as letter
 - The middle line should be completely filled
 - Make sure both sides of the A are lined up vertically
+
+### Try it!
 
 - Open <a href="./PracticeProgramTwo.java">PracticeProgramTwo.java</a> or copy this template into a new file:
 

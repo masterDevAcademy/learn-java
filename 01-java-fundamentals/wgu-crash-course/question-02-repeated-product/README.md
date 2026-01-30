@@ -136,6 +136,8 @@ Write a program that collects two integer inputs and assigns them to the variabl
 - Keeping all output on **one line**
 - Making sure spaces appear **between numbers only**
 
+### Try it!
+
 - Open <a href="./PracticeProgramOne.java">PracticeProgramOne.java</a> or copy this template into a new file:
 
     PracticeProgramOne.java:
@@ -189,6 +191,8 @@ Write a program that collects two integer inputs and assigns them to the variabl
 - The logic is identical to multiplication and addition — only the operator changes
 - Keep track of the running result
 - Print all three results on one line
+
+### Try it!
 
 - Open <a href="./PracticeProgramTwo.java">PracticeProgramTwo.java</a> or copy this template into a new file:
 
