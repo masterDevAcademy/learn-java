@@ -12,8 +12,9 @@ This section is a **fast, practice-first** track designed for WGU students prepa
 ## How to use this folder
 
 Each `question-XX` folder includes:
-- `README.md` — the prompt, what it's really resting, common pitfalls, and **OA-style variations** (no proprietary OA code)
-- `LabProgram.java` (or multiple files when needed) — a **practice template** plus a reference solution** you can compare against
+- `README.md` — the prompt, what it's really testing, common pitfalls, and **OA-style variations** (no proprietary OA code)
+- `PracticeProgramOne.java` a **practice template** plus a reference solution `PracticeProgramOneSolution.java` you can compare against
+- `PracticeProgramTwo.java` a **practice template** plus a reference solution** `PracticeProgramTwoSolution.java` you can compare against
 
 Recommended workflow:
 1. Open the `README.md`
@@ -23,6 +24,9 @@ Recommended workflow:
     javac LabProgram.java
     java LabProgram
     ```
+
+    > .class files are ignored in this entire repository. You MUST compile yourself.
+    
 4. Then do the **OA-style variations** section (the real value)
 
 ---
