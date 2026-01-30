@@ -79,6 +79,64 @@ public class LabProgram {
 }
 ```
 
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">Line by Line Explanation</strong>
+</summary>
+
+1. **The Class Definition**
+    
+    `public class LabProgram {`
+
+    - `public`: This is an access modifier that makes the class accessible from anywhere.
+    - `class`: This keyword tells Java you are defining a new class.
+    - `LabProgram`: This is the name of the class, In Java, the filename must match this name (e.g., `LabProgram.java`).
+
+2. **The Main Method**
+    
+    `public static void main(String[] args) {`
+
+    - This is the **entry point** of your program. When you run a Java application, the computer looks for this exact line to start executing instructions.
+    - `static`: Allows the method to run without creating an object of the class.
+    - `void`: Means this method doesn't return any value.
+    - `String[] args`: This allows the program to accept inputs (arguments) from the command line, though they aren't used here.
+
+3. **The Print Statements**
+
+    This middle section contains five variations of the same command:
+    
+    `System.out.println("...");`
+
+    - `System.out`: Tells Java to use the standard output stream (usually your console/screen)
+    - `.println`: Short for "print line." It prints whatever is inside the parentheses and then moves the cursor to a **new line**.
+    - **The Strings**:
+        - `"H   H"`: Prints the sides of the H with three spaces in between.
+        - `"HHHHH"`: Prints a solid row of five H's to create the middle bar of the letter.
+
+4. **Closing Braces**
+
+    `}`
+
+    - The first `}` closes the `main` method
+    - The second `}` closes the `LabProgram` class.
+
+<h2 align=center>
+Learn about these:
+</h2>
+
+[Class Definition and `main()` method](../../modules/01-java-basics-and-program-structure/02-program-structure-and-main)
+
+
+[The Print Statement](../../modules/01-java-basics-and-program-structure/03-printing-output-and-escape-characters)
+
+ 
+
+
+
+</details>
+
+---
+
 <h1 align=center>
 More Practice
 </h1>

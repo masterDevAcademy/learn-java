@@ -100,6 +100,64 @@ public class LabProgram {
 }
 ```
 
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">Line by Line Explanation</strong>
+</summary>
+
+If you do not understand `public class LabProgram{` or `public static void main(String[] args) {` you need to go back to question one or read [Module 1](../../modules/01-java-basics-and-program-structure)
+
+1. **Setup and Input**
+    
+    `import java.util.Scanner;`
+    - This imports the Scanner utility to your program to allow it to read input typed by the user
+
+    `Scanner scnr = new Scanner(System.in);`
+    - This creates a **Scanner object** named `scnr`. It's a tool that allows your program to read input typed by the user.
+
+    `int starting_num = scnr.nextInt();`
+    - The program pauses and waits for the user to type an integer. This value is stored in the variable `starting_num`.
+
+    `int multiplier = scnr.nextInt();`
+    - The program waits for the second integer, which will be used to multiple the numbers in the sequence.
+
+2. **The Calculations**
+    
+    These lines perform the "chain reaction" of multiplication:
+
+    `int first = starting_num * multiplier;`
+    - It calculates the first result by multiplying the starting number by the multiplier.
+
+    `int second = first * multiplier;`
+    - It takes the **result** of the first calculation and multiplies it by the multiplier again.
+
+    `int third = second * multiplier;`
+    - It takes the **result** of the second calculation and multiplies it one last time.
+
+3. **The Output**
+
+    `System.out.println(first + " " + second + " " + third);`
+    - This prints all three results on a single line
+    - The `+ " " +` parts are used to add a space between the numbers so they don't run together (e.g., printing `10 100 1000` instead of `101001000`).
+
+
+<h2 align=center>
+Learn about these:
+</h2>
+
+[Input with Scanner](../../modules/02-variables-and-data-types/06-input-with-scanner)
+
+
+[The Calculations](../../modules/03-operators-and-expressions/08-arithmetic-operators/)
+
+[The Output](../../modules/01-java-basics-and-program-structure/03-printing-output-and-escape-characters/)
+
+ 
+
+</details>
+
+---
+
 <h1 align=center>
 More Practice
 </h1>
