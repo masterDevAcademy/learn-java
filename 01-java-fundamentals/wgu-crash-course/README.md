@@ -49,20 +49,20 @@ Recommended workflow:
 
 | Folder | Skill it drills |
 |--------|-----------------|
-| question-01 | Printing a pattern (exact spacing) |
-| question-02 | Basic arithmetic + repeated multiplication |
-| question-03 | Integer division (tables filles) |
-| question-04 | Mixed input types + formatted sentence |
-| question-05 | Conditionals + validation + math with digits |
-| question-06 | String parsing + initials formatting |
-| question-07 | Sentinel loop + smallest + sum |
-| question-08 | Arrays + average + formatted output |
-| question-09 | Methods + Random + looping calls | 
-| question-10 | Objects + setters/getters + compare | 
-| question-11 | Encapsulation + helper method + ratio |
-| question-12 | constructors + accessors/mutators | 
-| question-13 | Inheritance + overriding | 
-| question-14 | ArrayList field + add/get methods |
+| [question-01](./question-01-print-pattern/) | Printing a pattern (exact spacing) |
+| [question-02](./question-02-repeated-product/) | Basic arithmetic + repeated multiplication |
+| [question-03](./question-03-integer-division/) | Integer division (tables filles) |
+| [question-04](./question-04-mixed-input-formatting/) | Mixed input types + formatted sentence |
+| [question-05](./question-05-validation-and-divisibility/) | Conditionals + validation + math with digits |
+| [question-06](./question-06-name-initials/) | String parsing + initials formatting |
+| [question-07](./question-07-sentinel-sum-min/) | Sentinel loop + smallest + sum |
+| [question-08](./question-08-array-average/) | Arrays + average + formatted output |
+| [question-09](./question-09-method-random-loop/) | Methods + Random + looping calls | 
+| [question-10](./question-10-compare-objects/) | Objects + setters/getters + compare | 
+| [question-11](./question-11-helper-method-encapsulation/) | Encapsulation + helper method + ratio |
+| [question-12](./question-12-constructors-getters-setters/) | constructors + accessors/mutators | 
+| [question-13](./question-13-inheritance-override/) | Inheritance + overriding | 
+| [question-14](./question-14-arraylist-field-add-get/) | ArrayList field + add/get methods |
 
 ---
 
