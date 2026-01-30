@@ -168,11 +168,11 @@ A   A
 
             // Modify the program to print a capital "A"
 
-            System.out.println("A"):
-            System.out.println("AA"):
-            System.out.println("AAAAA"):
-            System.out.println("AA"):
-            System.out.println("AA"):
+            System.out.println("A");
+            System.out.println("AA");
+            System.out.println("AAAAA");
+            System.out.println("AA");
+            System.out.println("AA");
             
         }
     }
