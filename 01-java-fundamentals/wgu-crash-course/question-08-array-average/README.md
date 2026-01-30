@@ -1,9 +1,9 @@
 <h1 align=center>
-PA Question 07 — Sum and Smallest Value 
+PA Question 08 — Array Values and Average 
 </h1>
 
 <p align=center>
-Navigate to <a href="../../modules/02-variables-and-data-types/05-strings-and-string-operations/">Module 2 — Lesson 5</a> to learn more about splitting strings, indexing, and using <code>substring()</code>. To brush up on <code>if / else if / else</code> statements, navigate to <a href="../../modules/04-decision-making/11-if-else-if-else/">Module 4 — Lesson 11</a>. You should be really comfortable with the <code>Scanner</code> now, but if you need a reminder, navigate to <a href="../../modules/02-variables-and-data-types/06-input-with-scanner/">Module 2 — Lesson 6</a>.
+ — .
 </p>
 
 <h2 align=center>
@@ -28,29 +28,27 @@ Prompt
 </h2>
 
 <p align=center>
-Write a program that collects any number of non-negative integer inputs and calculates the sum of the values. A negative integer should end the input collection and is not part of the sum.
+Write a program that creates an array to hold three values of type double. The program should collect three double values as input and store them in an array. Then calculate the average value of the array.
 </p>
 
 <p align=center>
-Output the smallest non-negative value and the sum of the non-negative input values, ending with a newline. Ensure your program output matches the example formatting below and works for a variety of input values.
+Output the array values and calculated average value, ending with a newline. Ensure your program output matches the example formatting below and works for a variety of input values.
 </p>
 
 
 **If the input is:**
 
 ```text
-15
-20
-0
-3
--1
+10.0
+10.5
+11.0
 ```
 
 **The output is:**
 
 ```text
-Smallest: 0
-Sum: 38
+Array items: 10.0, 10.5, 11.0
+Average: 10.5
 ```
 
 
@@ -76,11 +74,11 @@ LabProgram.java
 import java.util.Scanner;
 
 public class LabProgram {
-    public static void main(String[] args) {
-        Scanner scnr = new Scanner(System.in);
-        /* Type your code here */
-
-    }
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      /* Type your code here. */
+      
+   }
 }
 ```
 
@@ -98,25 +96,23 @@ public class LabProgram {
         Scanner scnr = new Scanner(System.in);
         /* Type your code here */
 
-        int sum = 0;
-        int smallest = Integer.MAX_VALUE; // Start with a very large value
+        double[] numbers = new double[3]; // Array to hold three double variables
+        double sum = 0.0;
 
-        while (true) {
-            int num = scnr.nextInt();
-
-            if (num < 0) {
-                break; //stop input if negative
-            }
-
-            sum += num; // add to sum
-
-            if (num < smallest) {
-                smallest = num;
-            }
+        // Collect input and store in array
+        for (int i = 0; i < 3; i++) {
+            numbers[i] = scnr.nextDouble();
+            sum += numbers[i]; // Add to sum
         }
 
-        System.out.println("Smallest: " + smallest);
-        System.out.println("Sum: " + sum);
+        double average = sum / 3; // calculate average
+
+        // Print array items
+        
+        System.out.println("Array items: " + numbers[0] + ", " + numbers[1] + ", " + numbers[2]);
+
+        // Print average
+        System.out.println("Average: " + average);
     }
 }
 ```
