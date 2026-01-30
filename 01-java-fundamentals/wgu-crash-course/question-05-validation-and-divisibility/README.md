@@ -3,7 +3,7 @@ PA Question 05 — Divisibility Check with Input Validation
 </h1>
 
 <p align=center>
-Navigate to <a href="../../modules/04-conditionals-and-logic/">Module 4 — Conditionals</a> to learn more about using <code>if</code> statements and logical operators.
+Navigate to <a href="../../modules/04-decision-making/11-if-else-if-else/">Module 4 — Lesson 11</a> to learn more about using <code>if</code> statements and logical operators. If you need to brush up on using Scanner, navigate to <a href="../../modules/02-variables-and-data-types/06-input-with-scanner/">Module 2 — Lesson 6</a>.  To better understand arithmetic operations, navigate to <a href="../../modules/03-operators-and-expressions/08-arithmetic-operators/">Module 3 — Lesson 08</a>.
 </p>
 
 <h2 align=center>

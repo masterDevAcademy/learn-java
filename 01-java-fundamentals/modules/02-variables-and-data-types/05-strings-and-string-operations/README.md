@@ -27,7 +27,7 @@ For now, the most important thing to remember is:
 
 > A `String` stores a sequence of characters and comes with built-in tools for working with text.
 
-- {{Tip or note about usage}}
+💡 **Important:** Strings cannot be changed after they are created. Methods like `substring()` return a **new String**, not a modified version of the original
 
 ---
 
@@ -51,7 +51,7 @@ String username = "ShadowHeart";
 int length = username.length();
 ```
 
-You'll learn more about objects later. For now, focus on **what strings can do**. 
+You'll learn more about objects later. For now, focus on **what Strings can do**. 
 
 ---
 
@@ -68,6 +68,22 @@ String first = "Astarion";
 String last = "Ancunin";
 
 String fullName = first + last;
+```
+
+**Output:**
+```text
+AstarionAncunin
+```
+
+> ⚠️ Java does **not** automatically add spaces when combining strings.
+
+```java
+String fullName = first + " " + last;
+```
+
+**Output:**
+```text
+Astarion Ancunin
 ```
 
 You can also combine Strings with variables and text:
@@ -109,7 +125,7 @@ Example:
 ---
 
 <h2 align=center>
-The <code>substring()</code> Method
+5) The <code>substring()</code> Method
 </h2>
 
 The `substring()` method extracts part of a String.
@@ -133,6 +149,32 @@ Indexes start at 0.
 ```text
 S h a d o w H e a r t
 0 1 2 3 4 5 6 7 8 9 10
+```
+
+💡 If you use an index outside the String's length, your program will crash with a `StringIndexOutOfBoundsException`.
+
+---
+
+<h2 align=center>
+6) Changing Letter Case
+</h2>
+
+Strings also have methods to change text case:
+
+**Input:**
+
+```java
+String name = "ShadowHeart";
+
+System.out.println(name.toUpperCase());
+System.out.println(name.toLowerCase());
+```
+
+**Output:**
+
+```text
+SHADOWHEART
+shadowheart
 ```
 
 ---
@@ -167,7 +209,7 @@ Your program must:
 - Print all results using variables (no hardcoded output values)
 - Compile and run without errors
 
-> *Hint: Try building your final alias by adding a short prefix (like a title,mood, or role) in front of your base name using concatenation
+> *💡 Hint: Try building your final alias by adding a short prefix (like a title,mood, or role) in front of your base name using concatenation
 
 ### Starter Template
 ```java
@@ -206,9 +248,26 @@ Final Alias: Dark_ShadowHeart
 <h2 align=center> Quick Recap </h2>
 
 - `String` is used to store text in Java
-- Strings are not primitive data types
+- Strings are **objects**, not primitives
 - Text is combined using (`+`)
 - `length()` counts characters
 - `substring()` extracts part of a String
+- Strings cannot be modified — methods return new Strings
+
+<details>
+<summary align=center><strong style="font-size: 1.4rem">Explore More (Optional)</strong></summary>
+
+<br>
+
+After completing the mini project, you can continue practicing in the folders below:
+
+### `playground/`
+Small experimental programs where you can experiment with String methods and see how Java handles text.
+
+### `challenges/`
+Extra mini-programs that extend this lesson's ideas.
+</details>
+
+---
 
 In the next lesson, you'll learn how to make your programs interactive by accepting input from the user using the `Scanner` class.
