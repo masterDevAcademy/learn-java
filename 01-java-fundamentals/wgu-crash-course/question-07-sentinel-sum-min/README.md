@@ -121,6 +121,65 @@ public class LabProgram {
 }
 ```
 
+
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">Line by Line Explanation</strong>
+</summary>
+
+If you do not understand `public class LabProgram{` or `public static void main(String[] args) {` you need to go back to question one or read [Module 1](../../modules/01-java-basics-and-program-structure). If you do not understand 'Scanner' please go back to question two or read [Input with Scanner](../../modules/02-variables-and-data-types/06-input-with-scanner). Understanding `System.out.println()` is crucial at this point; if you do not understand this, stop here and go read [Printing Output](../../modules/01-java-basics-and-program-structure/03-printing-output-and-escape-characters/).
+
+
+1. **Initializing "Sentinel" Variables**
+    
+    `int sum = 0;`
+    - This acts as a running total, starting at 0.
+
+    `int smallest = Integer.MAX_VALUE`
+    - `Integer.MAX_VALUE` is the largest possible number a Java `int` can hold (2,147,483,647). By starting here, the very first number the user types is guaranteed to be smaller, allowing the program to correctly track the minimum.
+
+2. **The Infinite Loop**
+    
+    `while (true) { ... }`
+
+    - The `while(true)` loop is an "infinite loop." It will run forever unless it hits a `break` command or the program is killed.
+
+
+3. **Reading Input and the "Exit Door"**
+
+    `int num = scnr.nextInt();`
+    - The program pauses and waits for the user to enter an integer.
+
+    `if (num < 0) { break; }
+    - This is the **sentinel condition**. If the user types `-1`, `-5`, or any negative number, the `break` command is triggered. This immediately jumps the program out of the loop and down to the print statement. **The negative number itself is not added to the sum.**
+
+4. Updating Logic
+
+    `sum += num;`
+    - If the number was positive, it gets added to our total.
+
+    `if (num < smallest) { smallest = num; };`
+    - This checks if the current number is the smallest one seen so far. If it is, we update the `smallest` variable.
+
+5. Final Output
+
+    `System.out.println("Smallest: " + smallest);` `System.out.println("Sum: " + sum);`
+    - Once the loop ends (because a negative number was entered), the final stats are printed to the console.
+
+<h2 align=center>
+Learn about these:
+</h2>
+
+[Accumulators & Min/Max Tracking](../../modules/05-loops/17-accumulators-and-min-max-tracking/)
+
+[While Loops & Sentinel values](../../modules/05-loops/14-while-loops/)
+
+ 
+
+</details>
+
+---
+
 <h1 align=center>
 More Practice
 </h1>
