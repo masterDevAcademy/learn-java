@@ -113,7 +113,7 @@ Learn how to generate random values in Java and use them in programs.
 - Advanced probability
 
 #### Mini Project
-Create a dice roll or coin flip simulator using random numbers
+Create an enemy encounter simulator that simulates encounters as a player travels through a dangerous area.
 
 --- 
 

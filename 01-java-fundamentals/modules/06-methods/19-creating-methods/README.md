@@ -70,7 +70,7 @@ When the program runs, it jumps to the method and executes its code.
 ---
 
 <h2 align=center>
-4) Why Use Methods?\
+4) Why Use Methods?
 </h2>
 
 Methods help you:
@@ -81,46 +81,49 @@ Methods help you:
 
 ---
 
-<h2 align=center> Mini Project — {{Mini Project Title}} </h2>
+<h2 align=center> Mini Project — Game Message System </h2>
+Create a program that uses methods to display different game messages.
+
+Instead of writing all messages directly in `main`, you'll organize them into separate methods.
 
 ### Objective
+Create a Java program that: 
+- Defines multiple methods to display game-related messages
+- Call those methods from `main`
+- Keeps `main` short and readable
 
-{{What the student should create or accomplish}}
-
-{{JavaFileName.java}}
-```java
-public class {{JavaFileName}} {
-    public static void main(String[] args) {
-        // Insert your code here
-    }
-}
-```
-*Hint: {{Optional hint}}*
 
 ### Rules
-- ❌ {{Rule 1}}
-- ❌ {{Rule 2}}
-- ❌ {{Rule 3}}
-- ✅ {{Allowed actions}}
+- ❌ No return values yet
+- ❌ No parameters yet
+- ❌ No loops required
+- ✅ Use `void` methods and method calls
 
 ### Requirements
-{{Detailed requirements for the project}}
+Your program must:
+- Define at least **three methods** besides `main`
+- Each method must print a different message (examples: battle start, victory, damage taken)
+- Call all methods from inside `main`
+- Keep `main` clean and organized
 
 ### Basic Example (yours should be different)
 ```text
-{{Example output}}
+A wild enemy appears!
+You take 10 damage!
+Victory! You earned rewards.
 ```
 
 ### Common Mistakes
-- {{Mistake 1}}
-- {{Mistake 2}}
-- {{Mistake 3}}
+- Forgetting to call a method from `main`
+- Placing methods inside `main` (not allowed)
+- Misspelling the method name when calling it
+- Forgetting parentheses when calling a method
 
 <h2 align=center> Quick Recap </h2>
 
-- {{Key takeaway 1}}
-- {{Key takeaway 2}}
-- {{Key takeaway 3}}
-- {{Key takeaway 4}}
+- Methods group related code into reusable units
+- Methods must be **defined** and then **called**
+- `void` methods do not return values
+- Methods help keep programs organized
 
-Next lesson, you'll be ready to {{transition to next lesson}}
+Next lesson, you'll learn how methods can accept input and return results using **parameters and return values**.
