@@ -1,5 +1,5 @@
 <h1 align="center">
-Lesson 24: Introduction to Classes and Objects
+Lesson 25: Introduction to Classes and Objects
 </h1>
 
 ## Lesson Goal
@@ -90,7 +90,7 @@ This introduces:
 
 ### Objective
 
-Create a Java program thatT:
+Create a Java program that:
 - Defines a `Character` class
 - Includes fields for: 
     - Name
