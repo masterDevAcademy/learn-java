@@ -314,7 +314,7 @@ Write a program that reads a number and determines whether it is positive, negat
 ```
 
 ```text
-0 is zeo.
+0 is zero.
 ```
 
 
