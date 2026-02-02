@@ -14,8 +14,10 @@ public class PracticeProgramTwoSolution {
 
         scnr.close();
 
-        int leftoverSlices = totalSlice / boxSize;
+        int leftoverSlices = totalSlice % boxSize;
 
         System.out.println("Leftover slices: " + leftoverSlices);
+
+        scnr.close();
     }
 }

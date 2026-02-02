@@ -1,4 +1,3 @@
-/* DELETE THIS LINE (commented out to prevent errors from showing)
 import java.util.Scanner;
 
 public class PracticeProgramTwo {
@@ -9,6 +8,6 @@ public class PracticeProgramTwo {
 
         // Read the total slices and print how many are left over.
 
+        scnr.close();
     }
 }
-DELETE THIS LINE */

@@ -1,4 +1,3 @@
-/* DELETE THIS LINE (commented out to prevent errors from showing)
 import java.util.Scanner;
 
 public class PracticeProgramOne {
@@ -9,7 +8,7 @@ public class PracticeProgramOne {
         // A bus holds 40 passengers
 
         // Read the number of passengers and print how many buses are completely filled.
-
+        
+        scnr.close();
     }
 }
- DELETE THIS LINE*/
