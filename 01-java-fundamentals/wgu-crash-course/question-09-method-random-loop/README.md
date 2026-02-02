@@ -3,7 +3,7 @@ PA Question 09 — Method with Random Results
 </h1>
 
 <p align=center>
- — .
+Navigate to <a href="../../modules/06-methods/18-defining-methods/">Module 6 — Lesson 18</a> to learn about defining methods. Navigate to <a href="../../modules/06-methods/19-method-parameters-and-return-values/">Module 6 — Lesson 19</a> to learn about parameters and return values. Navigate to <a href="../../modules/06-methods/20-working-with-random/">Module 6 — Lesson 20</a> to learn about using the <code>Random</code> class.
 </p>
 
 <h2 align=center>
@@ -51,6 +51,17 @@ true
 false
 true
 ```
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **You must write a separate method.** Not all logic goes in `main()`.
+- The method should **return a value**, not print it.
+- The `Random` object is **passed in as a parameter**, not created inside the method.
+- The loop belongs in `main()`, where the method is called repeatedly.
+
+</details>
 
 
 ## Common mistakes
@@ -178,7 +189,11 @@ Learn about these:
 </h2>
 
 
+[Defining Methods](../../modules/06-methods/18-defining-methods)
 
+[Parameters & Return Values](../../modules/06-methods/19-method-parameters-and-return-values)
+
+[Using Random](../../modules/06-methods/20-working-with-random)
  
 
 </details>

@@ -3,8 +3,9 @@ PA Question 04 — Name, Age, and Salary Formatting
 </h1>
 
 <p align=center>
-Navigate to <a href="../../modules/02-variables-and-data-types/06-input-with-scanner/">Module 2— Lesson 6</a> to learn more about reading different types of input.
+Navigate to <a href="../../modules/02-variables-and-data-types/06-input-with-scanner/">Module 2 — Lesson 6</a> to learn more about reading different types of input. Navigate to <a href="../../modules/04-strings/12-strings-basics/">Module 4 — Lesson 12</a> to learn more about working with strings. Navigate to <a href="../../modules/01-java-basics-and-program-structure/03-printing-output-and-escape-characters/">Module 1 — Lesson 3</a> to review formatted output.
 </p>
+
 
 <h2 align=center>
 What You Practice
@@ -21,7 +22,7 @@ Using <code>nextLine()</code>,
 </p>
 
 <p align=center>
-Combining Variables into formatted output
+Combining variables into formatted output
 </p>
 
 <h2 align=center>
@@ -46,15 +47,30 @@ Pat Ford
 Pat Ford is 35 and makes $60,000.
 ```
 
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **Read inputs in the exact order given.** If the prompt lists name first and age second, your code must read them in that same order.
+- **Match input methods to the data type.**
+  - Use `nextInt()` for integers
+  - Use `next()` for single words
+  - Use `nextLine()` for full lines of text
+- **Output format matters.** Pay attention to spaces, punctuation, and capitalization in the required output.
+- **Don’t print prompts** like “Enter your name:” unless the instructions tell you to.
+
+</details>
+
 ## Common mistakes
-- Using `next()` instead of `nextLine()` for the full name
-- Forgetting that nextInt() leaves a newline behind
-- Forgetting the dollar sign `$`
-- Missing punctuation like the period at the end
+- Using `nextLine()` after `nextInt()` without consuming the leftover newline
+- Reading inputs in the wrong order
+- Printing extra text not shown in the example output
+- Missing spaces or punctuation in the output format
 
 ## Variations to practice (OA-style)
 - Age might be given as a string instead of an int
-- Salary might be a number without commas (on the PA, it wants it displayed without the commas if that is the case [the OA should be the same])
+- - Salary might be a number without commas (your program should still display it correctly)
 - Input order might change (salary first, etc.)
 
 
@@ -96,10 +112,65 @@ public class LabProgram {
          int age = scnr.nextInt();
          String salary = scnr.next();
 
-         System.out.println(name + " is " + age + " and makes $" + salary + ".")
+         System.out.println(name + " is " + age + " and makes $" + salary + ".");
     }
 }
 ```
+
+> *NOTE: If you mix `nextInt()` and `nextLine()`, you may need an extra `nextLine()` to consume the leftover newline.
+
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">Line by Line Explanation</strong>
+</summary>
+
+If you do not understand `public class LabProgram {` or `public static void main(String[] args) {` review [Module 1](../../modules/01-java-basics-and-program-structure).
+
+1. **Setup and Input**
+
+    `import java.util.Scanner;`  
+    - This allows the program to read input from the user.
+
+    `Scanner scnr = new Scanner(System.in);`  
+    - Creates a Scanner object that reads from the keyboard.
+
+    `String name = scnr.nextLine();`  
+    - Reads the person's **full name**. `nextLine()` is used because names may contain spaces.
+
+    `int age = scnr.nextInt();`  
+    - Reads the age as an integer.
+
+    `String salary = scnr.next();`  
+    - Reads the salary as a single word/string (including commas if present).
+
+2. **Building the Output Sentence**
+
+    ```java
+    System.out.println(name + " is " + age + " and makes $" + salary + ".");
+    ```
+
+    - The `+` operator joins (concatenates) strings and numbers together.
+    - Spaces and punctuation inside the quotes must match the required format exactly.
+    - `$` is added manually because it is not part of the input.
+
+3. **Scanner Input Tip**
+
+    When mixing `nextInt()` and `nextLine()`, Java may leave a newline character in the input buffer.  
+    If you read another full line after an integer, you may need an extra `scnr.nextLine();` to clear it.
+
+<h2 align=center>
+Learn about these:
+</h2>
+
+[Input with Scanner](../../modules/02-variables-and-data-types/06-input-with-scanner)
+
+[Working with Strings](../../modules/04-strings/12-strings-basics)
+
+[The Print Statement](../../modules/01-java-basics-and-program-structure/03-printing-output-and-escape-characters)
+
+
+</details>
+
 
 <h1 align=center>
 More Practice

@@ -19,7 +19,7 @@ Storing objects inside collections
 </p>
 
 <p align=center>
-sing loops to access object data
+Using loops to access object data
 </p>
 
 <p align=center>
@@ -67,6 +67,32 @@ Quantity: 1
 
 Total: 14.98
 ```
+
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **This is a multi-file question.**  
+  You will only modify `Customer.java`. Do NOT change `CustomerInfo.java` or `Grocery.java`.
+
+- **You are storing objects inside a collection.**  
+  Instead of storing numbers or strings, this program stores **Grocery objects** inside an `ArrayList`.
+
+- **The ArrayList belongs to the Customer.**  
+  Each `Customer` object maintains its own grocery list.
+
+- **You must create methods to manage the list.**  
+  `addGrocery()` adds items to the list.  
+  `getGroceryList()` returns the list so other files can loop through it.
+
+- **Do not print inside the Customer class.**  
+  Printing happens in `CustomerInfo.java`. The Customer class is only responsible for storing data.
+
+- **The loop in CustomerInfo uses your methods.**  
+  If `getGroceryList()` or `addGrocery()` are wrong, the loop in `main()` will not work.
+
+</details>
 
 
 ## Common mistakes
@@ -259,7 +285,7 @@ public class Customer {
     }
 
     public void setName(String name) {
-        this.name = name.
+        this.name = name;
     }
 }
 ```
@@ -272,14 +298,116 @@ public class Customer {
 
 If you do not understand `public class LabProgram{` or `public static void main(String[] args) {` you need to go back to question one or read [Module 1](../../modules/01-java-basics-and-program-structure). If you do not understand 'Scanner' please go back to question two or read [Input with Scanner](../../modules/02-variables-and-data-types/06-input-with-scanner). Understanding `System.out.println()` is crucial at this point; if you do not understand this, stop here and go read [Printing Output](../../modules/01-java-basics-and-program-structure/03-printing-output-and-escape-characters/).
 
+1. The Grocery Class
 
+    ```java
+    public class Grocery {
+        private String item;
+        private double price;
+        private int quantity;
+    }
+    ```
 
+    - Each Grocery object represents one item.
+    - It stores the item name, price, and quantity.
+
+    ```java
+    public Grocery(String item, double price, int quantity)
+    ```
+
+    - This constructor creates a grocery object with data.
+
+    ```java
+    public String getItem()
+    public double getPrice()
+    public int getQuantity()
+    ```
+
+    These getters allow other files to access grocery data.
+
+2. Customer CLass
+
+    ```java
+    private ArrayList<Grocery> groceryList = new ArrayList<Grocery>();
+    ```
+
+    - This creates an ArrayList that stores Grocery objects.
+    - Every Customer has their own grocery list.
+
+    ```java
+    public ArrayList<Grocery> getGroceryList() {
+        return groceryList;
+    }
+    ```
+
+    - This returns the entire grocery list.
+    - CustomerInfo.java uses this to loop through items.
+
+    ```java
+    public void addGrocery(Grocery grocery) {
+        groceryList.add(grocery);
+    }
+    ```
+
+    - This method adds a Grocery object to the list.
+    - It is called each time the user enters an item.
+
+3. How CustomerInfo Uses Your Methods
+
+    ```java
+    grocery = new Grocery(item, price, quantity);
+    customer1.addGrocery(grocery);
+    ```
+
+    - A new Grocery object is created.
+    - It is added to the customer’s grocery list using your method.
+
+    ```java
+    for(Grocery g : customer1.getGroceryList()) {
+    ```
+
+    - This loops through the ArrayList you created.
+
+    ```java
+    System.out.println("Item: " + g.getItem());
+    System.out.println("Price: " + g.getPrice());
+    System.out.println("Quantity: " + g.getQuantity());
+    ```
+
+    - These getters come from the Grocery class.
+
+    ```java
+    total += g.getPrice() * g.getQuantity();
+    ```
+
+    - This calculates the correct total by multiplying price and quantity.
+
+4. Big Concept: Objects Inside Collections
+
+This program shows:
+- A Customer object
+- Contains an ArrayList
+- That stores multiple Grocery objects
+
+This is how real programs store:
+- Shopping carts
+- Team rosters
+- Libraries of books
+- Playlists of songs
+
+Each object holds its own data, and collections manage groups of objects.
 
 <h2 align=center>
 Learn about these:
 </h2>
 
+[ArrayLists](../../modules/10-collections/30-arraylists)
 
+[Objects Inside Collections](../../modules/10-collections/31-objects-inside-collections)
+
+[Loops with Collections](../../modules/05-loops/15-for-loops)
+
+[Classes and Objects Review](../../modules/08-objects-and-classes/25-introduction-to-classes-and-objects)
 
  
 

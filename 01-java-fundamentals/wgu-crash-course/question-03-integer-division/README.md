@@ -3,8 +3,9 @@ PA Question 03 — Full Tables Using Integer Division
 </h1>
 
 <p align=center>
-Navigate to <a href="../../modules/03-operators-and-expressions/08-arithmetic-operators/">Module 3 — Lesson 8</a> to learn more about using arithmetic operators.
+Navigate to <a href="../../modules/02-variables-and-data-types/06-input-with-scanner/">Module 2 — Lesson 6</a> to learn more about using <code>Scanner</code> in Java. Navigate to <a href="../../modules/03-operators-and-expressions/08-arithmetic-operators/">Module 3 — Lesson 8</a> to learn more about using arithmetic operators.
 </p>
+
 
 <h2 align=center>
 What You Practice
@@ -62,15 +63,33 @@ Tables filled: 34
 Tables filled: 34
 ```
 
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **Spot what they’re really asking:** this is an **integer division** problem.
+- If they ask for "full" or "filled" groups (tables, buses, seats, etc.), you usually want:  **`totalPassengers / busCapacity`** (no rounding).
+- **Don’t use decimals** unless the prompt explicitly says to.
+- **Output only what they ask for** (no extra words or labels).
+- **Pay attention to the exact output format** (one number vs multiple values, spaces, and final newline).
+
+</details>
+
 ## Common mistakes
-- Trying to round instead of using integer division
-- Using decimals instead of integers
-- Forgetting the exact text: `"Tables filled: "`
+- Using floating-point math instead of integer division
+- Rounding (e.g., `Math.ceil`) when they want only fully filled buses
+- Printing extra text (labels like "Result:” or "Total:")
+- Mixing up quotient vs remainder (`/` vs `%`)
+- Dividing in the print statement instead of storing the result in a variable (harder to debug later questions)
 
 ## Variations to practice (OA-style)
 - Change the table size (e.g., 8 or 12 guests per table)
-- Ask for **remaining quests** instead of filled tables
+- Ask for **remaining guests** instead of filled tables
 - Ask for **tables needed** (this requires rounding up — different logic!)
+
+> If the prompt uses words like **full, filled, complete**, or **whole**, default to **integer division** unless it explicitly asks you to round up **or include partially filled groups**.
+
 
 
 <h2 align=center>
@@ -119,6 +138,57 @@ public class LabProgram {
     }
 }
 ```
+
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">Line by Line Explanation</strong>
+</summary>
+
+If you do not understand `public class LabProgram {` or `public static void main(String[] args) {` review [Module 1](../../modules/01-java-basics-and-program-structure).
+
+1. **Setup and Input**
+
+    `import java.util.Scanner;`  
+    - Imports the `Scanner` class so your program can read user input.
+
+    `Scanner scnr = new Scanner(System.in);`  
+    - Creates a Scanner named `scnr` that reads from the keyboard.
+
+    `int tableSize = 10, guests, tablesFilled;`  
+    - `tableSize` is set to `10` because each table seats 10 guests.
+    - `guests` will store the input value.
+    - `tablesFilled` will store the number of full tables.
+
+    `guests = scnr.nextInt();`  
+    - Reads one integer input and stores it in `guests`.
+
+2. **The Calculation (Integer Division)**
+
+    `tablesFilled = guests / tableSize;`  
+    - Uses **integer division** to calculate full tables.
+    - Integer division **truncates** any remainder.
+      - Example: `349 / 10` becomes `34` (the `.9` is discarded).
+    - This matches the idea of **full** tables only.
+
+3. **Formatted Output**
+
+    `System.out.println("Tables filled: " + tablesFilled);`  
+    - Prints the exact label text followed by the number.
+    - The space after the colon is important (`": "`).
+    - `println` ensures the output ends with a newline.
+
+<h2 align=center>
+Learn about these:
+</h2>
+
+[Input with Scanner](../../modules/02-variables-and-data-types/06-input-with-scanner)
+
+[Arithmetic Operators and Integer Division](../../modules/03-operators-and-expressions/08-arithmetic-operators)
+
+[The Print Statement](../../modules/01-java-basics-and-program-structure/03-printing-output-and-escape-characters)
+
+</details>
+
 
 <h1 align=center>
 More Practice

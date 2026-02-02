@@ -3,7 +3,7 @@ PA Question 08 — Array Values and Average
 </h1>
 
 <p align=center>
- — .
+Navigate to <a href="../../modules/07-arrays/22-arrays-basics/">Module 7 — Lesson 22</a> to learn about arrays. Navigate to <a href="../../modules/07-arrays/23-looping-through-arrays/">Module 7 — Lesson 23</a> to learn about looping through arrays. If you need to review loops, visit <a href="../../modules/05-loops/15-for-loops/">Module 5 — Lesson 15</a>.
 </p>
 
 <h2 align=center>
@@ -51,6 +51,18 @@ Array items: 10.0, 10.5, 11.0
 Average: 10.5
 ```
 
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **Step 1: Store values in an array.** You are not just using three variables — you must use an array.
+- **Step 2: Use a loop for input.** If the prompt says three values, your loop should run three times.
+- **Step 3: Track a running total while collecting input.**
+- **Step 4: Divide by the number of elements to calculate the average.**
+- **Output formatting matters.** Match spaces, commas, and labels exactly.
+
+</details>
 
 ## Common mistakes
 - Forgetting to initialize the array size
@@ -126,9 +138,9 @@ If you do not understand `public class LabProgram{` or `public static void main(
 
 1. **The Array Declaration**
     
-    `double[] numbers = new double[3]`
+    `double[] numbers = new double[3];`
     - This creates an **array** named `numbers` that can hold **3** separate `double` (decimal) values.
-    - Think of an array like a row of lockers, where each locker has an index stating at 0.
+    - Think of an array like a row of lockers, where each locker has an index starting at 0.
 
 2. **The `for` Loop and Input**
     
@@ -148,7 +160,7 @@ If you do not understand `public class LabProgram{` or `public static void main(
     `double average = sum / 3;`
     - This takes the final total of the three numbers and divides it by 3. Since both `sum` and `3` (implicitly treated as a double here) are used, you get a precise decimal result.
 
-4. Outputting the Results
+4. **Outputting the Results**
 
     `System.out.println("Array items: " + numbers[0] + ", " + numbers[1] + ", " + numbers[2]);`
     - Here, the code manually accesses each "locker" in the array using its index (`0`, `1`, and `2`) to print them out side-by-side.
@@ -161,6 +173,13 @@ Learn about these:
 </h2>
 
 
+[Arrays Basics](../../modules/07-arrays/22-arrays-basics)
+
+[Looping Through Arrays](../../modules/07-arrays/23-looping-through-arrays)
+
+[For Loops](../../modules/05-loops/15-for-loops)
+
+[Input with Scanner](../../modules/02-variables-and-data-types/06-input-with-scanner)
 
  
 
@@ -181,7 +200,7 @@ Prompt
 </h2>
 
 <p align=center>
-Write a program that stores <strong>five</strong> double values in an array and calculates the average.
+Write a program that reads <strong>five double values</strong>, stores them in an array, and prints the average.
 </p>
 
 **Output format:**
@@ -193,7 +212,7 @@ Average: X
 
 ### What to focus on 
 - Changing array size
-- Looping correct number of time
+- Looping correct number of times
 - Dividing by array length
 
 
@@ -211,22 +230,24 @@ Average: X
 
             Scanner scnr = new Scanner(System.in);
 
-            int largest = Integer.MIN_VALUE;
+            double[] numbers = new double[5];
+            double sum = 0;
 
-            // Read numbers until negative
+            // Read 5 numbers into the array
 
-            // Track the largest value
+            // Compute the average
 
-            // Print result
+            // Print the result
 
         }
     }
+
     ```
 
 - Find the solution at <a href="./PracticeProgramOneSolution.java">PracticeProgramOneSolution.java</a>.
 
 <h2 align=center>
-2) Sum and Count
+2) Find the Largest Value in an Array
 </h2>
 
 <h2 align=center>
@@ -234,19 +255,19 @@ Prompt
 </h2>
 
 <p align=center>
-Write a program that reads non-negative integers until a negative number is entered. Output both the <strong>sum</strong> and how many numbers where entered.
+Write a program that reads <strong>four double values</strong>, stores them in an array, and prints the largest value.
 
 **Output format:**
 
 ```text
-Count: X
-Sum: Y
+Largest: X
 ```
 
 ### What to focus on
-- Tracking two values at once
-- Incrementing a counter inside the loop
-- Same sentinel pattern
+- Looping through an array
+- Comparing values to find the largest
+- Initializing the largest value correctly
+
 ### Try it!
 
 - Open <a href="./PracticeProgramTwo.java">PracticeProgramTwo.java</a> or copy this template into a new file:
@@ -260,14 +281,13 @@ Sum: Y
         public static void main(String[] args) {
             Scanner scnr = new Scanner(System.in);
 
-            int sum = 0;
-            int count = 0;
+            double[] numbers = new double[4];
 
-            // Read numbers until negative
+            // Read 4 numbers into the array
 
-            // Track count and sum
+            // Find the largest value
 
-            // Print Result
+            // Print the result
 
         }
     }

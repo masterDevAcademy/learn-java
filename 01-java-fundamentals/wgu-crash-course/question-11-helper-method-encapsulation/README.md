@@ -3,7 +3,7 @@ PA Question 11 — Calculating Debt Ratio Inside a Class
 </h1>
 
 <p align=center>
- — .
+Navigate to <a href="../../modules/08-objects-and-classes/25-introduction-to-classes-and-objects/">Module 8 — Lesson 25</a> to review classes and objects. Navigate to <a href="../../modules/08-objects-and-classes/27-encapsulation-getters-and-setters/">Module 8 — Lesson 27</a> to review encapsulation and helper methods. 
 </p>
 
 <h2 align=center>
@@ -60,6 +60,35 @@ Ensure your program output matches the example formatting below and works for a 
 ```text
 The Company's total debt is in the amount of $250,000.00, and total assets are in the amount of $300,000.00, which gives a debt ratio of 0.83.
 ```
+
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **Notice this is a multi-file question.**  
+  You are **not** doing the math in `DebtMeasure.java`. All logic must go inside `Debt.java`.
+
+- **Look for keywords like “helper method” and “class field.”**  
+  That means the calculation should be stored inside the object, not returned directly from a method in `main()`.
+
+- **The setter triggers the calculation.**  
+  When you see a setter that takes multiple values (`setDR(totalDebt, totalAssets)`), it usually means:
+  1. Pass the values into the class  
+  2. A private method does the math  
+  3. The result is saved in a field
+
+- **Getter methods only return stored data.**  
+  `getDR()` should *not* recalculate anything — it should only return the value already stored in `debtRatio`.
+
+- **Access modifiers matter.**  
+  - `private` = internal helper logic  
+  - `public` = methods other classes are allowed to use
+
+- **Formatting is already handled in `DebtMeasure.java`.**  
+  Do not print anything inside the `Debt` class.
+
+</details>
 
 
 ## Common mistakes
@@ -154,18 +183,59 @@ public class Debt {
     <strong style="font-size: 1.4rem">Line by Line Explanation</strong>
 </summary>
 
-If you do not understand `public class LabProgram{` or `public static void main(String[] args) {` you need to go back to question one or read [Module 1](../../modules/01-java-basics-and-program-structure). If you do not understand 'Scanner' please go back to question two or read [Input with Scanner](../../modules/02-variables-and-data-types/06-input-with-scanner). Understanding `System.out.println()` is crucial at this point; if you do not understand this, stop here and go read [Printing Output](../../modules/01-java-basics-and-program-structure/03-printing-output-and-escape-characters/).
+If you do not understand classes or objects, review [Module 8 — Introduction to Classes and Objects](../../modules/08-objects-and-classes/25-introduction-to-classes-and-objects). If you need a refresher on getters and setters, review [Encapsulation](../../modules/08-objects-and-classes/27-encapsulation-getters-and-setters).
 
+1. **Private Field**
 
+    ```java
+    private double debtRatio;
+    ```
 
+    - This variable stores the calculated debt ratio.
+    - It is `private`, meaning only methods inside this class can access it directly.
+
+2. **Private Helper Method**
+
+    ```java
+    private void calculateDR(double totalDebt, double totalAssets) {
+        debtRatio = totalDebt / totalAssets;
+    }
+    ```
+
+    - This method performs the actual calculation.
+    - It is marked `private` because it is only meant to be used inside the class.
+    - The result of the calculation is saved into the `debtRatio` field.
+
+3. **Getter Method**
+
+    ```java
+    public double getDR() {
+        return debtRatio;
+    }
+    ```
+
+    - This method allows other classes to read the calculated debt ratio.
+    - It does not allow them to change it.
+
+4. **Setter Method**
+
+    ```java
+    public void setDR(double totalDebt, double totalAssets) {
+        calculateDR(totalDebt, totalAssets);
+    }
+    ```
+
+    - This method receives the raw input values.
+    - Instead of doing the math here, it calls the private helper method.
+    - This keeps the calculation logic organized and contained inside the class.
 
 <h2 align=center>
 Learn about these:
 </h2>
 
+[Classes and Objects](../../modules/08-objects-and-classes/25-introduction-to-classes-and-objects)
 
-
- 
+[Encapsulation, Getters, and Setters](../../modules/08-objects-and-classes/27-encapsulation-getters-and-setters)
 
 </details>
 

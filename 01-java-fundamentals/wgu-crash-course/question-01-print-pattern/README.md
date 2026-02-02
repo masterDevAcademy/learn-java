@@ -23,7 +23,7 @@ Prompt
 </h2>
 
 <p align=center>
-Output the following pattern, ending with a newline.Each line of the pattern contains 5 characters including whitespace.
+Output the following pattern, ending with a newline. Each line of the pattern contains 5 characters including whitespace.
 </p>
 
 The output is:
@@ -36,10 +36,25 @@ H   H
 H   H
 ```
 
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **"Exact Output" means your program is graded by string matching.** Every character matters.
+- **Spaces count.** `"H   H"` is 5 characters: `H` + 3 spaces + `H`.
+- **Each line must be exactly 5 characters wide.** Don't use tabs (`\t`) — they aren't "one space."
+- **"Ending with a newline"** means the last printed line should use `println(...)` (or you print `\n` yourself).
+- **Don't print anything extra.** No labels, no "Result:", no blank lines before/after.
+- If the pattern is shown in a code block, copy it visually — don't "retype from memory." Count spaces.
+
+</details>
+
 ## Common mistakes
 - Using tabs instead of spaces
 - Missing a line / extra line
 - Forgetting the final newline (use `println`)
+- Using `print()` instead of `println()` and losing line breaks
 
 ## Variations to practice (OA-style)
 Try rewriting the pattern using different letters/symbols (e.g., `A`, `*`, `#`) while keeping the spacing the same.
@@ -69,7 +84,6 @@ LabProgram.java
 ```java
 public class LabProgram {
     public static void main(String[] args) {
-        /* Type your code here */
         System.out.println("H   H");
         System.out.println("H   H");
         System.out.println("HHHHH");
@@ -164,7 +178,7 @@ UUUUU
 ```
 
 ### What to focus on
-- Using `System.out.println() correctly
+- Using `System.out.println()` correctly
 - Counting spaces carefully
 - Making sure the bottom of the U is centered
 
@@ -210,7 +224,7 @@ A   A
 ```
 
 ### What to focus on
-- Leading spaces matter just as much as letter
+- Leading spaces matter just as much as letters
 - The middle line should be completely filled
 - Make sure both sides of the A are lined up vertically
 

@@ -3,7 +3,7 @@ PA Question 07 — Sum and Smallest Value
 </h1>
 
 <p align=center>
-Navigate to <a href="../../modules/02-variables-and-data-types/05-strings-and-string-operations/">Module 2 — Lesson 5</a> to learn more about splitting strings, indexing, and using <code>substring()</code>. To brush up on <code>if / else if / else</code> statements, navigate to <a href="../../modules/04-decision-making/11-if-else-if-else/">Module 4 — Lesson 11</a>. You should be really comfortable with the <code>Scanner</code> now, but if you need a reminder, navigate to <a href="../../modules/02-variables-and-data-types/06-input-with-scanner/">Module 2 — Lesson 6</a>.
+Navigate to <a href="../../modules/05-loops/14-while-loops/">Module 5 — Lesson 14</a> to learn about while loops. Navigate to <a href="../../modules/05-loops/17-accumulators-and-min-max-tracking/">Module 5 — Lesson 17</a> to learn about tracking largest and smallest values. If you need to review conditionals, visit <a href="../../modules/04-decision-making/11-if-else-if-else/">Module 4 — Lesson 11</a>.
 </p>
 
 <h2 align=center>
@@ -53,12 +53,23 @@ Smallest: 0
 Sum: 38
 ```
 
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **You are comparing values as they are entered.**
+- Look for keywords like **largest, smallest, highest, lowest** — these mean you need to keep track of a running value.
+- A **negative number** is the sentinel value — stop reading input when a negative is entered.
+- Always initialize your comparison variable correctly before the loop or on the first iteration.
+
+</details>
 
 ## Common mistakes
-- Including the negative number in the sum
-- Forgetting to initialize `smallest` properly
-- Resetting `smallest` inside the loop
-- Using `if` instead of a loop
+- Not updating the largest/smallest value inside the loop
+- Initializing the tracking variable incorrectly
+- Forgetting to stop at the sentinel value
+- Printing extra text not shown in the example output
 
 ## Variations to practice (OA-style)
 - Find the **largest** value instead of smallest
@@ -135,7 +146,7 @@ If you do not understand `public class LabProgram{` or `public static void main(
     `int sum = 0;`
     - This acts as a running total, starting at 0.
 
-    `int smallest = Integer.MAX_VALUE`
+    `int smallest = Integer.MAX_VALUE;`
     - `Integer.MAX_VALUE` is the largest possible number a Java `int` can hold (2,147,483,647). By starting here, the very first number the user types is guaranteed to be smaller, allowing the program to correctly track the minimum.
 
 2. **The Infinite Loop**
@@ -150,7 +161,7 @@ If you do not understand `public class LabProgram{` or `public static void main(
     `int num = scnr.nextInt();`
     - The program pauses and waits for the user to enter an integer.
 
-    `if (num < 0) { break; }
+    `if (num < 0) { break; }`
     - This is the **sentinel condition**. If the user types `-1`, `-5`, or any negative number, the `break` command is triggered. This immediately jumps the program out of the loop and down to the print statement. **The negative number itself is not added to the sum.**
 
 4. Updating Logic
@@ -246,7 +257,7 @@ Prompt
 </h2>
 
 <p align=center>
-Write a program that reads non-negative integers until a negative number is entered. Output both the <strong>sum</strong> and how many numbers where entered.
+Write a program that reads non-negative integers until a negative number is entered. Output both the <strong>sum</strong> and how many numbers were entered.
 
 **Output format:**
 

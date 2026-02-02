@@ -3,7 +3,7 @@ PA Question 06 — Name Formatting with Initials
 </h1>
 
 <p align=center>
-Navigate to <a href="../../modules/02-variables-and-data-types/05-strings-and-string-operations/">Module 2 — Lesson 5</a> to learn more about splitting strings, indexing, and using <code>substring()</code>. To brush up on <code>if / else if / else</code> statements, navigate to <a href="../../modules/04-decision-making/11-if-else-if-else/">Module 4 — Lesson 11</a>. You should be really comfortable with the <code>Scanner</code> now, but if you need a reminder, navigate to <a href="../../modules/02-variables-and-data-types/06-input-with-scanner/">Module 2 — Lesson 6</a>.
+Navigate to <a href="../../modules/04-strings/12-strings-basics/">Module 4 — Lesson 12</a> to learn about working with strings. Navigate to <a href="../../modules/04-strings/13-string-methods/">Module 4 — Lesson 13</a> to learn about string methods like <code>substring()</code> and <code>charAt()</code>. If you need to review input, visit <a href="../../modules/02-variables-and-data-types/06-input-with-scanner/">Module 2 — Lesson 6</a>.
 </p>
 
 <h2 align=center>
@@ -43,7 +43,7 @@ If no middle name was provided, format the output and name as shown below:
 </p>
 
 <p align=center>
-<code>lastInitial., firstName
+<code>lastInitial., firstName</code>
 </p>
 
 
@@ -56,7 +56,7 @@ Pat Silly Doe
 **The output is:**
 
 ```text
-D. Pat S.
+D., Pat S.
 ```
 
 **Alternatively, if the input is:**
@@ -71,12 +71,27 @@ Julia Clark
 C., Julia
 ```
 
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **Count how many words are in the name.**
+  - 2 words → First + Last
+  - 3 words → First + Middle + Last
+- **Initials usually mean the first character of a word.**
+  - Use `charAt(0)` or `substring(0, 1)`
+- **Pay attention to output punctuation.**
+  - Periods, commas, and spaces must match exactly.
+- **Don’t assume middle names always exist** unless the prompt guarantees it.
+
+</details>
 
 ## Common mistakes
-- Using `next()` instead of `nextLine()` (only reads one word)
-- Not handling extra spaces (use `.trim()` and `split("\\s+"))`)
-- Mixing up first/middle/last positions
-- Forgetting punctuation: `.,` and `.`
+- Using `next()` instead of `nextLine()` and losing parts of the name
+- Forgetting to handle both two-part and three-part names
+- Missing spaces or punctuation in the formatted output
+- Using the wrong index when extracting initials
 
 ## Variations to practice (OA-style)
 - Put **first initial** instead of last initial
@@ -137,11 +152,90 @@ public class LabProgram {
             System.out.println(lastInitial + "., " + firstName);
         } else {
             // Optional: handle unexpected input
-            System.out.println("Invalid input!")
+            System.out.println("Invalid input!");
         }
     }
 }
 ```
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">Line by Line Explanation</strong>
+</summary>
+
+1. **Reading Input**
+
+    ```java
+    String fullName = scnr.nextLine();
+    ```
+
+    - Reads the entire name as one line of text, including spaces.
+
+2. **Splitting the Name into Parts**
+
+    ```java
+    String[] nameParts = fullName.split(" ");
+    ```
+
+    - Splits the full name wherever a space appears.
+    - Examples `"Pat Silly Doe"` becomes ["Pat", "Silly", "Doe"].
+
+3. **Getting the First Name and Last Initial**
+
+    ```java
+    String firstName = nameParts[0];
+    String lastInitial = nameParts[nameParts.length - 1].substring(0, 1);
+    ```
+
+    - The first word is the first name.
+    - The last word is the last name; `substring(0, 1) gets its first letter.
+
+4. **If There Is a Middle Name**
+
+    ```java
+    if (nameParts.length == 3) {
+        String middleInitial = nameParts[1].substring(0, 1);
+        System.out.println(lastInitial + "., " + firstName + " " + middleInitial + ".");
+    }
+    ```
+
+    - If there are 3 words, the second word is the middle name.
+    - Its first letter becomes the middle initial.
+    - The output format becomes: `L., First M.`
+
+5. **If There Is No Middle Name**
+
+    ```java
+    else if (nameParts.length == 2) {
+        System.out.println(lastInitial + "., " + firstName);
+    }
+    ```
+
+    - If only two words are present, skip the middle initial
+    - Output format becomes: `L., First`
+
+6. **Handling Unexpected Input
+
+    ```java
+    else {
+        System.out.println("Invalid input!");
+    }
+    ```
+
+    - If the name doesn't have 2 or 3 parts, the program prints an error.
+
+
+<h2 align=center>
+Learn about these:
+</h2>
+
+[Working with Strings](../../modules/04-strings/12-strings-basics)
+
+[String Methods](../../modules/04-strings/13-string-methods)
+
+[Input with Scanner](../../modules/02-variables-and-data-types/06-input-with-scanner)
+
+</details>
+
 
 <h1 align=center>
 More Practice
