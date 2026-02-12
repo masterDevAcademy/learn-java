@@ -1,4 +1,3 @@
-/* DELETE THIS LINE (commented out to prevent errors from showing)
 import java.util.Scanner;
 
 public class PracticeProgramOne {
@@ -11,6 +10,6 @@ public class PracticeProgramOne {
 
         // Add adder three time, printing each new result
 
+        scnr.close();
     }
 }
-DELETE THIS LINE */

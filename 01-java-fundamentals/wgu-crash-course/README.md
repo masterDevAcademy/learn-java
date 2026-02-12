@@ -81,3 +81,14 @@ People often report that the OA uses the **same concepts** with small twists:
 This is why every folder includes a "Variations to practice section."
 
 Good luck!
+
+> **Note:** 
+>
+> All practice program **prompts and problem designs** in this crash course were written **before taking the course exam.** 
+>
+> Some folders may currently be missing:
+> - **"Final practice files"**
+> - **"Completed solution files"** 
+> - **"Fully built multi-project structures"** 
+>
+>This is because development of the repository is happening **in parallel with exam preparation**. While not every supporting file is complete yet, the **problem types, logic patterns, and concepts being practiced are still accurate and aligned with exam objectives.**

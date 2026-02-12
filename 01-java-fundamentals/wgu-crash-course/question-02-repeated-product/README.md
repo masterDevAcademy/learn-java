@@ -3,7 +3,7 @@ PA Question 02 — Repeated Multiplication (3 outputs)
 </h1>
 
 <p align=center>
-Navigate to <a href="../../modules/02-variables-and-data-types/06-input-with-scanner/">Module 3 — Lesson 5</a> to learn more about using <code>Scanner</code> in Java. Navigate to <a href="../../modules/03-operators-and-expressions/08-arithmetic-operators/">Module 3 — Lesson 8</a> to learn more about using arithmetic operators.
+Navigate to <a href="../../modules/02-variables-and-data-types/06-input-with-scanner/">Module 2 — Lesson 6</a> to learn more about using <code>Scanner</code> in Java. Navigate to <a href="../../modules/03-operators-and-expressions/08-arithmetic-operators/">Module 3 — Lesson 8</a> to learn more about using arithmetic operators.
 </p>
 
 <h2 align=center>
@@ -27,7 +27,7 @@ Prompt
 </h2>
 
 <p align=center>
-Write a program that collects two integer inputs and assigns them to the variables <code>starting_num</code> and <code>multiplier</code>. Multiple <code>starting_num</code> by <code>multiplier</code> and output the results. Repeat this process two more times, each time multiplying the previous result by the <code>multiplier</code>. The three product outputs should be separated by a whitespace character, ending with a newline.
+Write a program that collects two integer inputs and assigns them to the variables <code>starting_num</code> and <code>multiplier</code>. Multiply <code>starting_num</code> by <code>multiplier</code> and output the result. Repeat this process two more times, each time multiplying the previous result by <code>multiplier</code>. The three product outputs should be separated by a whitespace character, ending with a newline.
 </p>
 
 If the input is:
@@ -42,10 +42,24 @@ The output when `starting_num = 2` is:
 10 50 250
 ```
 
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **Identify the pattern:** it’s the same operation repeated 3 times.
+- **“Multiply the previous result”** means you **update** what you’re multiplying each time (don’t always use the original starting number).
+- **Output formatting matters:** print **three numbers on one line** separated by **single spaces**, then end with a newline.
+- **Read exactly two inputs.** Don’t prompt the user or print extra text.
+
+</details>
+
+
 ## Common mistakes
-- Using tabs instead of spaces
-- Missing a line / extra line
-- Forgetting the final newline (use `println`)
+- Printing each result on a new line instead of one line
+- Forgetting to use the previous result (re-multiplying `starting_num` each time)
+- Missing spaces between numbers, or adding an extra space at the end
+- Printing extra text (labels, prompts, etc.)
 
 ## Variations to practice (OA-style)
 - Change the operator: repeated **addition** or repeated **subtraction**
@@ -119,7 +133,7 @@ If you do not understand `public class LabProgram{` or `public static void main(
     - The program pauses and waits for the user to type an integer. This value is stored in the variable `starting_num`.
 
     `int multiplier = scnr.nextInt();`
-    - The program waits for the second integer, which will be used to multiple the numbers in the sequence.
+    - The program waits for the second integer, which will be used to multiply the numbers in the sequence.
 
 2. **The Calculations**
     
@@ -211,7 +225,7 @@ Write a program that collects two integer inputs and assigns them to the variabl
             int startingNum = scnr.nextInt();
             int adder = scnr.nextInt();
 
-            // Add adder three time, printing each new result
+            // Add adder three times, printing each new result
 
         }
     }

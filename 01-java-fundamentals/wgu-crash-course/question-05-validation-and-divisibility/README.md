@@ -27,7 +27,7 @@ Prompt
 </h2>
 
 <p align=center>
-A number is divisible by 3 if the sums of its digits is divisible by 3. For example, 153 is divisible by 3 because 1 + 5 + 3 = 9 and 9 is divisible by 3. 
+A number is divisible by 3 if the sum of its digits is divisible by 3. For example, 153 is divisible by 3 because 1 + 5 + 3 = 9 and 9 is divisible by 3. 
 </p>
 
 <p align=center>
@@ -78,6 +78,23 @@ Output a formatted message identifying if the three-digit number is divisible by
 ```text
 Invalid input!
 ```
+
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">How To Read This Prompt</strong>
+</summary>
+
+- **Step 1: Validate input first.** If *any* digit is negative, immediately print `Invalid input!` and stop.
+- **Step 2: Build the number using place value.**
+  - Hundreds digit × 100
+  - Tens digit × 10
+  - Ones digit × 1
+- **Step 3: Check divisibility using `%`.**
+  - If `sum % 3 == 0`, it is divisible by 3.
+- **Follow the output format exactly.** Spaces, punctuation, and capitalization must match.
+
+</details>
+
 
 ## Common mistakes
 - Forgetting to check for negative inputs 
@@ -132,6 +149,7 @@ public class LabProgram {
         }
 
         int number = one * 100 + two * 10 + three;
+        int sum = one + two + three
 
         if (sum % 3 == 0) {
             System.out.println(number + " is divisible by 3!");
@@ -142,12 +160,85 @@ public class LabProgram {
 }
 ```
 
+<details>
+<summary align=center>
+    <strong style="font-size: 1.4rem">Line by Line Explanation</strong>
+</summary>
+
+If you do not understand `public class LabProgram {` or `public static void main(String[] args) {` review [Module 1](../../modules/01-java-basics-and-program-structure).
+
+1. **Reading Input**
+
+    ```java
+    int one = scnr.nextInt();
+    int two = scnr.nextInt();
+    int three = scnr.nextInt();
+    ```
+
+    - Reads three digits that will form a three-digit number.
+
+2. **Input Validation**
+
+    ```java
+    if (one < 0 || two < 0 || three < 0) {
+        System.out.println("Invalid input!");
+        return;
+    }
+    ```
+
+    - Checks if any digit is negative.
+    - `||` means “or” — if *any* condition is true, the whole statement is true.
+    - `return;` immediately stops the program.
+
+3. **Building the Number**
+
+    ```java
+    int number = one * 100 + two * 10 + three;
+    ```
+
+    - Uses place value to combine digits into one number.
+
+4. **Checking Divisibility**
+
+    ```java
+    int sum = one + two + three;
+    if (sum % 3 == 0) {
+    ```
+    - `%` gives the remainder.
+    - If remainder is 0, the number is divisible by 3.
+
+5. **Output**
+
+    ```java
+    System.out.println(number + " is divisible by 3!");
+    ```
+    or
+    ```java
+    System.out.println(number + " is not divisible by 3!");
+    ```
+    - Concatenates numbers and strings to form the final sentence.
+
+<h2 align=center>
+Learn about these:
+</h2>
+
+[If / Else Statements](../../modules/04-decision-making/11-if-else-if-else)
+
+[Logical Operators](../../modules/04-decision-making/11-if-else-if-else)
+
+[Modulus Operator](../../modules/03-operators-and-expressions/08-arithmetic-operators)
+
+[Input with Scanner](../../modules/02-variables-and-data-types/06-input-with-scanner)
+
+</details>
+
+
 <h1 align=center>
 More Practice
 </h1>
 
 <h2 align=center>
-1) Even or Off Checker
+1) Even or Odd Checker
 </h2>
 
 <h2 align=center>
@@ -223,7 +314,7 @@ Write a program that reads a number and determines whether it is positive, negat
 ```
 
 ```text
-0 is zeo.
+0 is zero.
 ```
 
 

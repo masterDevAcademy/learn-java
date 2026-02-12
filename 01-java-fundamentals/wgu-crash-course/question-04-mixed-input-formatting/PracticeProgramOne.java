@@ -1,4 +1,3 @@
-/* DELETE THIS LINE (commented out to prevent errors from showing)
 import java.util.Scanner;
 
 public class PracticeProgramOne {
@@ -10,6 +9,6 @@ public class PracticeProgramOne {
 
         // Output formatted introduction sentence
 
+        scnr.close();
     }
 }
-DELETE THIS LINE */

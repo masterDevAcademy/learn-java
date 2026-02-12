@@ -1,4 +1,3 @@
-/* DELETE THIS LINE (commented out to prevent errors from showing)
 import java.util.Scanner;
 
 public class PracticeProgramTwo {
@@ -10,6 +9,6 @@ public class PracticeProgramTwo {
 
         // Subtract subtractor three times, printing each new result
 
+        scnr.close();
     }
 }
-DELETE THIS LINE */
